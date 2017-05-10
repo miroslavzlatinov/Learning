@@ -1,0 +1,81 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: mzlatinov
+ * Date: 4/17/17
+ * Time: 8:04 AM
+ */
+
+namespace ShopBundle\Services\Basket;
+
+
+use \Countable;
+//use ShopBundle\Services\Contracts\StorageInterface;
+
+
+class BasketStorage implements StorageInterface, Countable
+
+
+{
+    protected $bucket;
+
+    public function __construct($bucket ='default')
+    {
+
+
+        if (!isset($_SESSION[$bucket])) {
+
+            $_SESSION[$bucket] = [];
+        }
+          $this->bucket = $bucket;
+    }
+
+    public function set($index, $value)
+    {
+
+        $_SESSION[$this->bucket][$index] = $value;
+
+
+
+    }
+
+    public function get($index)
+    {
+        if (!$this->exists($index)) {
+            return null;
+        }
+        return $_SESSION[$this->bucket][$index];
+    }
+
+    public function all()
+    {
+        return $_SESSION[$this->bucket];
+    }
+
+    public function exists($index)
+    {
+        return isset($_SESSION[$this->bucket][$index]);
+    }
+
+    public function remove($index)
+    {
+        if ($this->exists($index)) {
+            unset($_SESSION[$this->bucket][$index]);
+        }
+    }
+
+    public function clear()
+    {
+        unset($_SESSION[$this->bucket]);
+    }
+
+    public function count()
+    {
+       return count($this->all());
+    }
+
+    public function update($index, $value, $ident)
+    {
+        // TODO: Implement update() method.
+    }
+}

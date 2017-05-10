@@ -1,0 +1,49 @@
+{% extends "@Shop/base.html.twig" %}
+
+{% block name %}{{ product.name }} | {% endblock %}
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ '/images/myshop/'~product.image }}" alt="{{ product.name }} image"
+                 class="thumbnail img-responsive">
+        </div>
+        <div class="col-md-8">
+            {% if product.outOfStock() %}
+                <span class="label label-danger">Out of stock</span>
+            {% elseif product.hasLowStock() %}
+                <span class="label label-warning">Low stock</span>
+            {% elseif product.inStock() %}
+                <span class="label label-success">In stock</span>
+            {% endif %}
+
+            <h4>{{ product.name }}</h4>
+            <p>{{ product.description }}</p>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    {% if product.promotionalprice %}
+                        <p class="lead">
+                            <strike> BGN {{ product.price }}</strike>
+                        </p>
+                    {% else %}
+                        <p class="lead">
+                            BGN {{ product.price }}
+                        </p>
+                    {% endif %}
+                    {% if product.promotionalprice %}
+                        <p class="lead">
+                            BGN {{ product.promotionalprice | number_format(2) }}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if product.inStock() %}
+                <a href="{{ path('cart_add', { 'id': product.id, 'quantity': 1 }) }}" class="btn btn-default btn-sm">Add
+                    to cart</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdcd0dfd-2abe-40de-a8df-afa52bd16c0f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/logs/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/sessions/.gitkeep" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/CartController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/CartController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/CategoryController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/CategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/OrderController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/OrderController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/ProductController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/PromotionController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/PromotionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Addresses.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Addresses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Customers.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Customers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Orders.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Orders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Payment.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Payment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/Product.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/AddressesType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/AddressesType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/CategoryPromotionType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/CategoryPromotionType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/CustomersType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/CustomersType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/OrdersType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/OrdersType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/ProductPromotionType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/ProductPromotionType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/ProductType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/ProductType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/UserPromotionType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/UserPromotionType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Form/UserType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/CookieListener.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/CookieListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/CookieRequestListener.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/CookieRequestListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/EmptyBasket.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/EmptyBasket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/FailedPayment.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/FailedPayment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/MarkOrderPaid.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/MarkOrderPaid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/SuccessfulPayment.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/SuccessfulPayment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Listeners/UpdateStock.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Listeners/UpdateStock.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Repository/CartItemRepository.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Repository/CartItemRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Repository/OrdersRepository.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Repository/OrdersRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Repository/ProductRepository.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Repository/ProductRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/config/config.yml" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Category/list.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Category/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/manage.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/manage.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/partials/store_item.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/partials/store_item.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/store.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/store.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/back_product.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/back_product.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/edit.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/list.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/partials/back.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/partials/back.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/categorylist.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/categorylist.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/create.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/create.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/edit.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/list.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/productlist.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/productlist.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/usercreate.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/usercreate.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/userlist.htm.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/userlist.htm.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/back.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/back.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_contents.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_contents.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_summary.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_summary.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/macro.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/macro.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/back_show.htm.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/back_show.htm.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/partials/form_back.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/partials/form_back.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/templates/app.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/templates/app.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile_menu.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile_menu.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_order.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_order.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_orders.html.twig" afterPath="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_orders.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketDbStorage.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketDbStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketStorage.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/Exceptions/NotCache.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Basket/Exceptions/NotCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Contracts/StorageInterface.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Contracts/StorageInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Calculator.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Calculator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Engine.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Engine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Language.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Services/Price/Language.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/ShopBundle.php" afterPath="$PROJECT_DIR$/src/ShopBundle/ShopBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShopBundle/Transformers/TagTransformer.php" afterPath="$PROJECT_DIR$/src/ShopBundle/Transformers/TagTransformer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/modalwarninig.js" afterPath="$PROJECT_DIR$/web/js/modalwarninig.js" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" />
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SoftUniExam" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getUsers</find>
+      <find>getUser</find>
+      <find>users</find>
+      <find>$customers</find>
+      <find>user</find>
+      <find>ass</find>
+      <find>edit</find>
+      <find>man</find>
+      <find>ROLE_U</find>
+      <find>ROLE_USER</find>
+      <find>role</find>
+      <find>ROLE</find>
+      <find>manage</find>
+      <find>product</find>
+      <find>@Security(&quot;has_role('ROLE_USER')&quot;)</find>
+      <find>content</find>
+      <find>sto</find>
+      <find>stock</find>
+      <find>decimal</find>
+      <find>persi</find>
+      <find>$id</find>
+      <find>delete</find>
+      <find>userorder</find>
+      <find>ex</find>
+      <find>cat</find>
+      <find>no</find>
+      <find>order</find>
+      <find>profile</find>
+      <find>$user</find>
+      <find>new</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>250x155</replace>
+      <replace>$form-&gt;isSubmitted() &amp;&amp; $form-&gt;isValid()</replace>
+      <replace>Promotion</replace>
+      <replace>headcategory</replace>
+      <replace>name</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker</dir>
+      <dir>$PROJECT_DIR$/src/ShopBundle/Controller</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/manage.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/userlist.htm.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Repository/PromotionRepository.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/PromotionController.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/PromotionType.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Promotion/usercreate.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/UserPromotionType.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/store.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_orders.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile_menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_order.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Events/StoreSubscriber.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/DependencyInjection/Compiler/ShopDependencyInject.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/ShopBundle.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/AcmeListener.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketDbStorage.php" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/UpdateStock.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Payment.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/EmptyBasket.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Repository/ProductRepository.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/MarkOrderPaid.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/partials/store_item.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Promotion.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/index_back.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/CartController.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Services/Basket/Exceptions/NotCache.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Orders.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Repository/OrdersRepository.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/back.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/NoCache.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/SuccessfulPayment.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Listeners/FailedPayment.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Addresses.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/OrdersType.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Resources/views/order/partials/form_back.html.twig" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Entity/Customers.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/CustomersType.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/AddressesType.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/OrderController.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Transformers/TagTransformer.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Controller/ProductController.php" />
+        <option value="$PROJECT_DIR$/src/ShopBundle/Form/ProductType.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="27" />
+    <option name="width" value="1288" />
+    <option name="height" value="974" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoftUniExam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoftUniExam" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Services" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Resources/views/order" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Resources/views/Product" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Controller" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/ShopBundle/Entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdcd0dfd-2abe-40de-a8df-afa52bd16c0f" name="Default" comment="" />
+      <created>1491393369217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1491393369217</updated>
+      <workItem from="1491393371056" duration="17317000" />
+      <workItem from="1491487609691" duration="134000" />
+      <workItem from="1491490323931" duration="69000" />
+      <workItem from="1491491291212" duration="302000" />
+      <workItem from="1491494168033" duration="24000" />
+      <workItem from="1491494262808" duration="2000" />
+      <workItem from="1491494300772" duration="9000" />
+      <workItem from="1491545958724" duration="6000" />
+      <workItem from="1491550457015" duration="465000" />
+      <workItem from="1491550944142" duration="97000" />
+      <workItem from="1491552506844" duration="281000" />
+      <workItem from="1491553525896" duration="97000" />
+      <workItem from="1491553910413" duration="4331000" />
+      <workItem from="1491559254567" duration="11824000" />
+      <workItem from="1491572739736" duration="5686000" />
+      <workItem from="1491727582573" duration="29000" />
+      <workItem from="1491727789176" duration="28376000" />
+      <workItem from="1491756840926" duration="5609000" />
+      <workItem from="1491762573687" duration="7173000" />
+      <workItem from="1491809554389" duration="13483000" />
+      <workItem from="1491826218401" duration="17622000" />
+      <workItem from="1491921570417" duration="666000" />
+      <workItem from="1491923005603" duration="214000" />
+      <workItem from="1491978392974" duration="2187000" />
+      <workItem from="1491980658303" duration="26000" />
+      <workItem from="1491980716941" duration="28619000" />
+      <workItem from="1492070004089" duration="22000" />
+      <workItem from="1492070077491" duration="22930000" />
+      <workItem from="1492177330850" duration="3238000" />
+      <workItem from="1492182036943" duration="34129000" />
+      <workItem from="1492262600837" duration="32550000" />
+      <workItem from="1492326354972" duration="6775000" />
+      <workItem from="1492412585510" duration="6420000" />
+      <workItem from="1492434231863" duration="5000" />
+      <workItem from="1492550995090" duration="365000" />
+      <workItem from="1492551821147" duration="522000" />
+      <workItem from="1492552782505" duration="1188000" />
+      <workItem from="1492585436943" duration="58000" />
+      <workItem from="1492594229755" duration="2397000" />
+      <workItem from="1492597303600" duration="4602000" />
+      <workItem from="1492728369152" duration="436000" />
+      <workItem from="1492949384007" duration="14022000" />
+      <workItem from="1492964255084" duration="24631000" />
+      <workItem from="1493033148143" duration="12977000" />
+      <workItem from="1493049328110" duration="23634000" />
+      <workItem from="1493102762394" duration="25556000" />
+      <workItem from="1493137048806" duration="11024000" />
+      <workItem from="1493184787593" duration="26762000" />
+      <workItem from="1493215319614" duration="4357000" />
+      <workItem from="1493224129323" duration="21036000" />
+      <workItem from="1493272496116" duration="20481000" />
+      <workItem from="1493293846883" duration="4462000" />
+      <workItem from="1493299321287" duration="5956000" />
+      <workItem from="1493310171278" duration="20643000" />
+      <workItem from="1493358747355" duration="1304000" />
+      <workItem from="1493360327451" duration="417000" />
+      <workItem from="1493361011027" duration="33196000" />
+      <workItem from="1493399638465" duration="9768000" />
+      <workItem from="1493446055798" duration="18493000" />
+      <workItem from="1493535117357" duration="4938000" />
+      <workItem from="1494398142389" duration="7000" />
+      <workItem from="1494400191029" duration="1512000" />
+      <workItem from="1494401852014" duration="3196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="550230000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="27" width="1288" height="974" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2890625" sideWeight="0.62814647" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21504803" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2890625" sideWeight="0.37185356" order="0" side_tool="true" content_ui="combo" x="150" y="360" width="320" height="344" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30402932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29363784" sideWeight="0.25518927" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844934" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile_menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/users/profile.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/Default/partials/store_item.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/partials/back.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/Product/back_product.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/CartItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/OrdersProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="50" column="80" lean-forward="false" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Promotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/order/partials/form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_summary.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/partials/back_contents.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/order/back_show.htm.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Basket/Exceptions/NotCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/CartController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/users/user_orders.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/order/index_back.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="94" column="68" lean-forward="false" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Repository/OrdersRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Listeners/NoCache.php" />
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Listeners/SuccessfulPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/cart/back.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="59" selection-start-column="58" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Orders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Form/AddressesType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Addresses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Listeners/FailedPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/OrderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="165" column="45" lean-forward="false" selection-start-line="165" selection-start-column="45" selection-end-line="165" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="46" column="65" lean-forward="false" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/views/order/partials/form_back.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Form/OrdersType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Form/CustomersType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Entity/Customers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Form/PromotionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1343">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Form/ProductType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Transformers/TagTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Controller/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Price/Calculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Price/Engine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Price/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/CookieManager/CookieManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Basket/BasketDbStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ShopBundle/Services/Basket/Basket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

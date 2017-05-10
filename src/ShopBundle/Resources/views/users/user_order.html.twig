@@ -1,0 +1,38 @@
+{% extends "@Shop/base.html.twig" %}
+
+{% block content %}
+    {% include '@Shop/users/profile_menu.html.twig' %}
+
+
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-2 content-page">
+
+
+    <td>
+        <div class="item col-md-4 col-sm-4 ">
+
+            <h2>Order#{{ order.id }}</h2>
+            <div class="panel panel-default">
+                <div class="panel-body">Total {{ order.total|number_format(2) }}</div>
+                {% if order.paid %}
+                    <span class="label label-success">Paid</span>
+                {% else %}
+                    <span class="label label-danger">Not Paid</span>
+                {% endif %}
+                {% for product in order.products %}
+                    <div class="panel-body"><a href="{{ path('product_get', {"id": product.productId.id}) }}">
+                            {{ product.productId.name }}
+                        </a></div>
+
+                    <div class="panel-body">Quantity {{ product.quantity }}</div>
+                {% endfor %}
+                <div class="panel-body"><h2>Shipping To</h2></div>
+                <div class="panel-body">{{ order.addressId.address1 }}</div>
+                <div class="panel-body">{{ order.addressId.address2 }}</div>
+                <div class="panel-body">{{ order.addressId.city }}</div>
+                <div class="panel-body">{{ order.addressId.postalCode }}</div>
+            </div>
+        </div>
+    </td>
+
+{% endblock %}

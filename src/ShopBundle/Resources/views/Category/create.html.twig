@@ -1,0 +1,16 @@
+{% extends "@Shop/base.html.twig" %}
+
+
+{% block content %}
+    <div class="countainer-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                {{ form_start(categoryForm) }}
+                {{ form_widget(categoryForm) }}
+                {{ form_errors(categoryForm) }}
+                {{ form_end(categoryForm) }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

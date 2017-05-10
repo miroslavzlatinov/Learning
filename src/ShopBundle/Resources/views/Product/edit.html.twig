@@ -1,0 +1,20 @@
+{% extends '@Shop/base.html.twig' %}
+
+{% block content %}
+    <div class="countainer-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                {{ form_start(editForm) }}
+                {{ form_widget(editForm) }}
+                {% if editForm.vars.value.image is not null %}
+                    <img src="{{ asset('/images/myshop/'~editForm.vars.value.image) }}"/>
+                {% endif %}
+                {{ form_errors(editForm) }}
+                {{ form_end(editForm) }}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+

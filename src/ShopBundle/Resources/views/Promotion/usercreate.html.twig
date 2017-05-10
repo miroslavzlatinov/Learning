@@ -1,0 +1,38 @@
+{% extends "@Shop/base.html.twig" %}
+
+
+{% block content %}
+
+
+    <div class="row">
+    <div class="col-md-12 ">
+        <div class="col-md-3 ">
+            {{ form_start(promotionForm) }}
+            {{ form_errors(promotionForm) }}
+            {{ form_widget(promotionForm.children.promotion) }}
+        </div>
+        <div class="col-md-2 ">
+            {{ form_label(promotionForm.children.item) }}
+            {{ form_widget(promotionForm.children.item) }}
+            {{ form_label(promotionForm.children.value1) }}
+            {{  form_widget(promotionForm.children.value1) }}
+            {{ form_label(promotionForm.children.rule) }}
+            {{ form_widget(promotionForm.children.rule) }}
+            {{ form_label(promotionForm.children.value2) }}
+            {{ form_widget(promotionForm.children.value2) }}
+            {{ form_label(promotionForm.children.logic) }}
+            {{ form_widget(promotionForm.children.logic) }}
+            {{ form_label(promotionForm.children.value3) }}
+            {{ form_widget(promotionForm.children.value3) }}
+            {{ form_label(promotionForm.children.rule2) }}
+            {{ form_widget(promotionForm.children.rule2) }}
+            {{ form_label(promotionForm.children.value4) }}
+            {{ form_widget(promotionForm.children.value4) }}
+            {{ form_rest(promotionForm) }}
+            {{ form_end(promotionForm) }}
+        </div>
+
+    </div>
+
+
+{% endblock %}

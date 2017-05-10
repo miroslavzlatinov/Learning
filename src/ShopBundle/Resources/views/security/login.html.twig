@@ -1,0 +1,40 @@
+{% extends '@Shop/base.html.twig' %}
+{% block content %}
+    {% if error %}
+        <div class="alert alert-danger">
+            <h1>{{ error.messageKey|trans(error.messageData, 'security') }}</h1>
+        </div>
+
+    {% endif %}
+    <div class="container body-content span=8 offset=2">
+        <div class="well">
+            <form class="form-horizontal" action="{{ path('our_login_check') }}" method="post">
+                <fieldset>
+                    <legend>Login</legend>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="user">User</label>
+                        <div class="col-sm-4 ">
+                            <input type="text" class="form-control" id="user" placeholder="User" name="_username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="password">Password</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="password" placeholder="Password"
+                                   name="_password">
+                        </div>
+                    </div>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+                            <a class="btn btn-default" href="{{ path('store_main') }}">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>our
+
+{% endblock %}

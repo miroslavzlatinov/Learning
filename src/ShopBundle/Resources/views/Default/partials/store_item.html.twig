@@ -1,0 +1,58 @@
+<div class="thumbnail">
+    {#<img class="group list-group-image" src="http://placehold.it/250x155/000/fff"#}
+
+    <a href="{{ path('product_get', {id: product.id}) }}">
+        <img class="group list-group-image col-md-6"
+             src="{{ '/images/myshop/'~product.image }}">
+    </a>
+    <div class="caption">
+
+        <a href="{{ path('product_get', {id: product.id}) }}">
+            <h4 class="group inner list-group-item-heading">
+                {{ product.name }}</h4>
+        </a>
+        <div class="col-md-4">
+            {% if product.promotionalprice %}
+                <span class="label label-danger"> {{ calcOffer.getOffername(product.getOffername) }} </span>
+            {% endif %}
+        </div>
+        <p class="group inner list-group-item-text">
+            {{ product.description }}
+        </p>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                {% for tag in product.tags %}
+                    <p class="lead">
+                    <li> <span class="label label-success">{{ tag }}  </span></li>
+
+                    </p>
+                {% endfor %}
+                <p class="lead">
+                    {{ product.category.name }}
+                </p>
+                {% if product.promotionalprice %}
+                    <p class="lead">
+                        <strike>   {{ product.price| number_format(2) }}</strike>
+                    </p>
+                {% else %}
+                    <p class="lead">
+                        {{ product.price }}
+                    </p>
+
+                {% endif %}
+                {% if product.promotionalprice %}
+
+                    <p class="lead">
+                        {{ product.promotionalprice |number_format(2) }}
+                    </p>
+                {% endif %}
+            </div>
+
+            {#<div class="col-xs-12 col-md-6">#}
+            {#<a class="btn btn-success" href="#">Add#}
+            {#to#}
+            {#cart</a>#}
+            {#</div>#}
+        </div>
+    </div>
+</div>

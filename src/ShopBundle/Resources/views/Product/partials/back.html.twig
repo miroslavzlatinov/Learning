@@ -1,0 +1,32 @@
+<div class="thumbnail">
+    <a href="{{ path('product_get', {id: product.id}) }}">
+        <img src="{{ '/images/myshop/'~product.image }}" alt="{{ product.name }} image">
+
+    </a>
+    <div class="caption">
+        <h4>
+            <a href="{{ path('product_get', {id: product.id}) }}">
+                {{ product.name }}
+            </a>
+        </h4>
+        <p>{{ product.description }}</p>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            {% if product.promotionalprice %}
+                <p class="lead">
+                    <strike>   {{ product.price }}</strike>
+                </p>
+            {% else %}
+                <p class="lead">
+                    {{ product.price }}
+                </p>
+            {% endif %}
+            {% if product.promotionalprice %}
+                <p class="lead">
+                    BGN {{ product.promotionalprice | number_format(2) }}
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</div>

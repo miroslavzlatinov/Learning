@@ -1,0 +1,15 @@
+<table class="table">
+    <tr>
+        <td>Sub total</td>
+        <td><span class=".glyphicon-font">BGN </span>{{ basket.subTotal | number_format(2) }}</td>
+    </tr>
+    <tr>
+        <td>Shipping</td>
+        <td><span class=".glyphicon-font">BGN </span> 5.00</td>
+    </tr>
+    <tr>
+        <td class="success">Total</td>
+        <td class="success"><span class=".glyphicon-font">BGN </span> {{ (basket.subTotal + 5) | number_format(2) }}
+        </td>
+    </tr>
+</table>

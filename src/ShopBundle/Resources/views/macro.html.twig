@@ -1,0 +1,149 @@
+{% macro rendergrid(objects) %}
+
+
+    {#{{ dump(oblects) }}#}
+    {% for msg in app.session.flashBag.get('delete') %}
+        <div class="alert alert-danger">
+            <h1>{{ msg }}</h1>
+        </div>
+    {% endfor %}
+    {% for msg in app.session.flashBag.get('error') %}
+        <div class="alert alert-danger">
+            <h1>{{ msg }}</h1>
+        </div>
+    {% endfor %}
+
+
+
+    {% set firstItem = objects|first|default %}
+
+
+
+    <div class="countainer">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-0 col-ld-2 col-ld-offset-0">
+                <div class="panel panel-primary">
+                    {% if firstItem %}
+                        <div class="panel-heading">{{ firstItem }}</div>
+
+                        <ul>
+                            <li class="btn btn"><a href="{{ path(firstItem|lower ~'_add') }}">NEW</a></li>
+                        </ul>
+                        <ul>
+                            <li class="btn btn"><a href="{{ path('manage_main') }}">Manger Menu</a></li>
+                        </ul>
+                    {% endif %}
+                    <div class="panel-body"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            {% block paginatorhead %}
+                {{ objects.getTotalItemCount }}
+            {% endblock %}
+            <div class="col-md-9 col-md-offset-0">
+                <div class="table-responsive">
+                    <table class="table table-responsive">
+                        <thead>
+                        <tr>
+
+                            {% for head in  firstItem.head %}
+
+                                {% if not  head|is_array %}
+
+                                    <th>{{ knp_pagination_sortable(objects, head, 'p.'~head) }}</th>
+                                {% endif %}
+                                {% if head|is_array %}
+                                    {% for key ,value in head %}
+                                        <th class="col-sm-3 col-md-6 col-lg-4">{{ key|capitalize }}</th>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+
+                            {#{% for head in  firstItem.head %}#}
+
+                            {#{% if not  head|is_array %}#}
+                            {#<th class="col-sm-3 col-md-6 col-lg-4">{{ head }}</th>#}
+                            {#{% endif %}#}
+                            {#{% if head|is_array %}#}
+                            {#{% for key ,value in head %}#}
+                            {#<th class="col-sm-3 col-md-6 col-lg-4">{{ key|capitalize }}</th>#}
+                            {#{% endfor %}#}
+                            {#{% endif %}#}
+                            {#{% endfor %}#}
+                        </tr>
+                        </thead>
+                        <tbody>
+
+
+                        {% for object in  objects %}
+                            <tr>
+                                {% for head in  firstItem.head %}
+                                    {% if head|is_array %}
+                                        {% for key ,value in head %}
+
+                                            <td class="col-sm-3 col-md-6 col-lg-4">  {{ attribute(attribute(object,'get'~key),'get'~value) }}</td>
+
+                                        {% endfor %}
+                                    {% endif %}
+                                    {% if not  head|is_array %}
+                                        {% if head == "published" %}
+                                            {% if attribute(object, 'get'~head) == 1 %}
+                                                <td class="col-sm-3 col-md-6 col-lg-4"><span
+                                                            class="label label-success">yes</span></td>
+                                            {% else %}
+                                                <td class="col-sm-3 col-md-6 col-lg-4"><span class="label label-danger">not</span>
+                                                </td>
+                                            {% endif %}
+                                        {% else %}
+                                            <td class="col-sm-3 col-md-6 col-lg-4">{{ attribute(object, 'get'~head) }}</td>
+                                        {% endif %}
+
+                                    {% endif %}
+
+                                {% endfor %}
+
+                                {% if firstItem %}
+
+                                    <td class="col-sm-3 col-md-6 col-lg-4">
+                                        <a href="{{ path(firstItem|lower ~"_edit",{'id' :attribute(object, 'getid') }) }}"
+                                           class="btn btn-warning">Edit</a>
+                                    </td>
+                                    <td class="col-sm-3 col-md-6 col-lg-4">
+                                        <form method="post"
+                                              action="{{ path(firstItem|lower ~'_delete', {'id':attribute(object, 'getid')}) }}">
+                                            <button type="submit" class="btn btn-danger confirm-delete">Delete</button>
+                                        </form>
+                                    </td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        {{ knp_pagination_render(objects) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="close">×</a>
+                    <h3>Delete</h3>
+                </div>
+                <div class="modal-body">
+                    <p>You are about to delete.</p>
+                    <p>Do you want to proceed?</p>
+                </div>
+                <a id="btnYes" class="btn danger">Yes</a>
+                <a href="#" data-dismiss="modal" aria-hidden="true" class="btn secondary">No</a>
+            </div>
+        </div>
+
+    </div>
+{% endmacro %}

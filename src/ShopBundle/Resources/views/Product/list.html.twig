@@ -1,0 +1,6 @@
+{% extends "@Shop/base.html.twig" %}
+{% import '@Shop/macro.html.twig' as rgrid %}
+
+{% block content %}
+    {{ rgrid.rendergrid(pagination) }}
+{% endblock %}

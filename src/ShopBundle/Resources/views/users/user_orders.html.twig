@@ -1,0 +1,36 @@
+{% extends "@Shop/base.html.twig" %}
+
+{% block content %}
+    {% include '@Shop/users/profile_menu.html.twig' %}
+
+
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-2 content-page">
+        {% for index , order in orders %}
+
+            <td>
+                <div class="item col-md-4 col-sm-4 ">
+                    <h2>Order#{{ order.id }}</h2>
+                    <div class="panel panel-default">
+                        <div class="panel-body">Total {{ order.total|number_format(2) }}</div>
+                        {% if order.paid %}
+                            <span class="label label-success">Paid</span>
+                        {% else %}
+                            <span class="label label-danger">Not Paid</span>
+                        {% endif %}
+                        <div class="panel-body">
+                            <form method="post"
+                                  action="{{ path('user_order_view',{'hash': order.hash}) }}">
+                                <button type="submit" class="btn">View</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        {% endfor %}
+
+    </div>
+
+
+
+{% endblock %}

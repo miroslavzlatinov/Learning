@@ -1,0 +1,113 @@
+{% extends '@Shop/base.html.twig' %}
+
+{% block title %}Checkout | {% endblock %}
+
+{% block content %}
+    {{ form_start(customerForm) }}
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <div class="col-md-6">
+
+                <h3>Your details</h3>
+                <hr>
+
+                <table class="table">
+                    <tr>
+                        <td>
+                            <div class="form-group ">
+                                <label>{{ form_label(customerForm.customerId.email) }}</label>
+                                {{ form_widget(customerForm.customerId.email) }}
+
+                            </div>
+
+                            <div class="form-group">
+
+                                {{ form_label(customerForm.customerId.name) }}
+                                {{ form_widget(customerForm.customerId.name) }}
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Shipping address</h3>
+                <hr>
+                <table class="table">
+                    <tr>
+                        <td>
+
+                            <div class="form-group">
+
+                                {{ form_label(customerForm.addressId.address1) }}
+                                {{ form_widget(customerForm.addressId.address1) }}
+
+                            </div>
+
+                            <div class="form-group">
+
+                                {{ form_label(customerForm.addressId.address2) }}
+                                {{ form_widget(customerForm.addressId.address2) }}
+                            </div>
+
+                            <div class="form-group">
+
+                                {{ form_label(customerForm.addressId.city) }}
+                                {{ form_widget(customerForm.addressId.city) }}
+
+                            </div>
+
+                            <div class="form-group">
+
+                                {{ form_label(customerForm.addressId.postalCode) }}
+                                {{ form_widget(customerForm.addressId.postalCode) }}
+
+
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h3>Payment</h3>
+            <hr>
+
+            <div id="payment">
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-4">
+            <div class="well">
+                <h4>Your order</h4>
+                <hr>
+
+                {% include '@Shop/cart/partials/back_summary.html.twig' %}
+                {% include '@Shop/cart/partials/back_summary.html.twig' %}
+
+                <button type="submit" class="btn btn-default" formnovalidate>
+                    Place order
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    {{ form_end(customerForm) }}
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://js.braintreegateway.com/js/braintree-2.30.0.min.js"></script>
+
+{% endblock %}

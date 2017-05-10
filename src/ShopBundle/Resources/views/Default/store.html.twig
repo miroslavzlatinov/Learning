@@ -1,0 +1,77 @@
+{% extends "@Shop/base.html.twig" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+
+
+{% endblock %}
+{% block content %}
+
+    <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 col-lg-push-0 col-md-push-0 col-sm-push-2">
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading"><span>{{ title }}</span></div>
+            <div class="panel-body">
+
+                <li><a href="{{ path('store_main') }}">All</a></li>
+                {% for category in menucategories %}
+
+                    <ul>
+                        <li><a href="{{ path('category_one',{id: category.id}) }}">{{ category.name }}</a></li>
+
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-push-1 col-md-push-1 col-sm-push-2 content-page">
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+                <div class="container">
+                    <div class="well well-sm">
+
+                        <strong>Sort by</strong>
+
+                        <div class="btn-group">
+                            <a href="#" id="list" class="btn btn-default btn-sm"><span
+                                        class="glyphicon glyphicon-th-list">
+            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                                        class="glyphicon glyphicon-th"></span>Grid</a>
+                        </div>
+                    </div>
+                    <div id="products" class="row list-group col-xs-10 col-lg-9 col-md-10">
+
+                        {% for index ,product in pagination %}
+
+
+                            <div class="item  col-xs-6 col-lg-6" align="left">
+                            {% include '@Shop/Default/partials/store_item.html.twig' with {product: product} %}
+                            {% if (index + 1) % 2 == 0 %}
+                                </div>
+                                <div class="row" align="left">
+                            {% endif %}
+
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+{% endblock %}

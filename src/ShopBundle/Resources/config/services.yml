@@ -1,0 +1,55 @@
+services:
+#    shop.example:
+#        class: ShopBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+     app.twig_extension:
+            class: ShopBundle\Twig\Extension\ShopExtension
+            public: false
+            tags:
+                - { name: twig.extension }
+
+
+
+     storage.entity:
+             class: ShopBundle\Entity\CartItem
+     storage.basket:
+                     class:  ShopBundle\Services\Basket\BasketDbStorage
+
+                     arguments: ["@doctrine.orm.default_entity_manager",'@storage.entity']
+     basket:
+                         class: ShopBundle\Services\Basket\Basket
+
+                         autowire: true
+     cookie.manager:
+              class:  ShopBundle\Services\CookieManager\CookieManager
+
+
+     a_listener:
+             class: ShopBundle\Listeners\CookieListener
+             arguments: [ "@service_container" ]
+             tags:
+                 - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+
+     b_listener:
+                 class: ShopBundle\Listeners\CookieRequestListener
+                 arguments: [ "@service_container" ]
+                 tags:
+                     - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+     language.engine:
+                    class: ShopBundle\Services\Price\Language
+
+     engine.calculator:
+                      class: ShopBundle\Services\Price\Engine
+                      arguments: ["@language.engine"]
+     offer.calculator:
+                     class: ShopBundle\Services\Price\Calculator
+                     arguments: ["@engine.calculator","@doctrine.orm.entity_manager"]
+
+     updatestock:
+                   class: ShopBundle\Listeners\UpdateStock
+                   autowire: true
+twig:
+     globals:
+             basket: '@basket'
+
+
